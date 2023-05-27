@@ -57,7 +57,7 @@ afterEvaluate {
         publications {
             release(MavenPublication) {
                 from components.release
-                groupId = 'com.arkados'
+                groupId = 'com.r42914lg.slider'
                 artifactId = 'slider'
                 version = "1.0"
             }
