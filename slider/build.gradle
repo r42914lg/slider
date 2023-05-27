@@ -36,6 +36,20 @@ android {
     }
 }
 
+publishing {
+    publications {
+        maven(MavenPublication) {
+            groupId = 'com.arkados'
+            artifactId = 'slider'
+            version = "1.0"
+
+            afterEvaluate {
+                from(components["release"])
+            }
+        }
+    }
+}
+
 dependencies {
 
     implementation "com.google.android.exoplayer:exoplayer:2.18.7"
