@@ -52,14 +52,16 @@ dependencies {
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
 }
 
-afterEvaluate {
-    publishing {
-        publications {
-            release(MavenPublication) {
+
+publishing {
+    publications {
+        release(MavenPublication) {
+            groupId = 'com.github.r42914lg'
+            artifactId = 'slider'
+            version = '1.0'
+
+            afterEvaluate {
                 from components.release
-                groupId = 'com.r42914lg.slider'
-                artifactId = 'slider'
-                version = '1.0'
             }
         }
     }
