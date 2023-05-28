@@ -59,7 +59,7 @@ afterEvaluate {
                 from components.release
                 groupId = 'com.r42914lg.slider'
                 artifactId = 'slider'
-                version = "1.0"
+                version = '1.0'
             }
         }
     }
